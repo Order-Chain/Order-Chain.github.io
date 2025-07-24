@@ -52,30 +52,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Scalable Autoregressive Monocular Depth Estimation</h1>
+            <h1 class="title is-1 publication-title">OrderChain: Towards General Instruct-Tuning for Stimulating the Ordinal Understanding Ability of MLLM</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Jinhong Wang</a><sup>1*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jian Liu</a><sup>2</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Shuo Tong</a><sup>1*</sup>,</span>
                   <span class="author-block">
-                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Dongqi Tang</a><sup>2</sup>,</span>
-                      <span class="author-block">
-                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Weiqiang Wang</a><sup>2</sup>,</span>
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jian Liu</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Dongqi Tang</a><sup>2</sup>,</span>
                         <span class="author-block">
-                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Wentong Li</a><sup>1</sup>,</span>
-                            <span class="author-block">
-                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Danny Chen</a><sup>3</sup>,</span><br>
+                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Weiqiang Wang</a><sup>2</sup>,</span>
+                          <span class="author-block">
+                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Wentong Li</a><sup>1</sup>,</span>
                               <span class="author-block">
-                              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jintai Chen</a><sup>4✝</sup>,</span>
+                              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hongxia Xu</a><sup>1</sup>,</span><br>
                                 <span class="author-block">
-                                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jian Wu</a><sup>1✝</sup>
+                                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Danny Chen</a><sup>3</sup>,</span><br>
+                                  <span class="author-block">
+                                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jintai Chen</a><sup>4✝</sup>,</span>
+                                    <span class="author-block">
+                                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jian Wu</a><sup>1✝</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><pre><sup>1</sup>ZJU   <sup>2</sup>Ant Group   <sup>3</sup>University of Notre Dame   <sup>4</sup>HKUST (Guangzhou)<br>CVPR 2025</pre></span>
+                    <span class="author-block"><pre><sup>1</sup>ZJU   <sup>2</sup>Ant Group   <sup>3</sup>University of Notre Dame   <sup>4</sup>HKUST (Guangzhou)<br>ICCV 2025</pre></span>
+                    <span class="eql-cntrb"><small><br><sup>✝</sup>Equal Contributions</small></span>
                     <span class="eql-cntrb"><small><br><sup>✝</sup>Corresponding Authors</small></span>
                   </div>
 
@@ -105,18 +110,18 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/wjh892521292/DAR" target="_blank"
+                    <a href="https://github.com/aTongs1/OrderChain" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (comming soon)</span>
+                    <span>Code</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2411.11361" target="_blank"
+                  <a href="https://arxiv.org/abs/2504.04801" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -134,7 +139,7 @@
 
 
 <!-- Teaser video-->
- <section class="hero teaser">
+<!--  <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="static/images/overview.jpg" alt="MY ALT TEXT"/>
@@ -143,7 +148,7 @@
       </h2>
     </div>
   </div>
-</section> 
+</section>  -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -154,7 +159,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper shows that the autoregressive model is an effective and scalable monocular depth estimator. Our idea is simple: We tackle the monocular depth estimation (MDE) task with an autoregressive prediction paradigm, based on two core designs. First, our depth autoregressive model (DAR) treats the depth map of different resolutions as a set of tokens, and conducts the low-to-high resolution autoregressive objective with a patch-wise casual mask. Second, our DAR recursively discretizes the entire depth range into more compact intervals, and attains the coarse-to-fine granularity autoregressive objective in an ordinal-regression manner. By coupling these two autoregressive objectives, our DAR establishes new state-of-the-art (SOTA) on KITTI and NYU Depth v2 by clear margins. Further, our scalable approach allows us to scale the model up to 2.0B and achieve the best RMSE of 1.799 on the KITTI dataset (5% improvement) compared to 1.896 by the current SOTA (Depth Anything). DAR further showcases zero-shot generalization ability on unseen datasets. These results suggest that DAR yields superior performance with an autoregressive prediction paradigm, providing a promising approach to equip modern autoregressive large models (e.g., GPT-4o) with depth estimation capabilities.
+          Despite the remarkable progress of multimodal large language models (MLLMs), they continue to face challenges in achieving competitive performance on ordinal regression (OR; a.k.a. ordinal classification). To address this issue, this paper presents OrderChain, a novel and general prompting paradigm that improves the ordinal understanding ability of MLLMs by specificity and commonality modeling. Specifically, our OrderChain consists of a set of task-aware prompts to facilitate the specificity modeling of diverse OR tasks and a new range optimization Chain-of-Thought (RO-CoT), which learns a commonality way of thinking about OR tasks by uniformly decomposing them into multiple small-range optimization subtasks. Further, we propose a category recursive division (CRD) method to generate instruction candidate category prompts to support RO-CoT automatic optimization. Comprehensive experiments show that LLaVA model with our OrderChain improves baseline LLaVA significantly on diverse OR datasets, e.g., from 47.5\% to 93.2\% accuracy on the Adience dataset for age estimation, and from 30.0\% to 85.7\% accuracy on the Diabetic Retinopathy dataset. Notably, LLaVA with our OrderChain also remarkably outperforms state-of-the-art methods by 27% on accuracy and  0.24 on MAE on the Adience dataset. To our best knowledge, our OrderChain is the first work that augments MLLMs for OR tasks, and the effectiveness is witnessed across a spectrum of OR datasets. Project Page: https://order-chain.github.io/.   
           </p>
         </div>
       </div>
@@ -165,7 +170,7 @@
 
 
 
-<section class="section hero is-small">
+<!-- <section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -268,17 +273,17 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wang2024scalable,
-        title={Scalable Autoregressive Monocular Depth Estimation},
-        author={Wang, Jinhong and Liu, Jian and Tang, Dongqi and Wang, Weiqiang and Li, Wentong and Chen, Danny and Chen, Jintai and Wu, Jian},
-        journal={arXiv preprint arXiv:2411.11361},
-        year={2024}
+      <pre><code>@article{wang2025orderchain,
+        title={OrderChain: A General Prompting Paradigm to Improve Ordinal Understanding Ability of MLLM},
+        author={Wang, Jinhong and Tong, Shuo and Tang, Dongqi and Wang, Weiqiang and Li, Wentong and Xu, Hongxia and Chen, Danny and Chen, Jintai and Wu, Jian and others},
+        journal={arXiv preprint arXiv:2504.04801},
+        year={2025}
       }</code></pre>
     </div>
 </section>
